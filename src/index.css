@@ -58,9 +58,9 @@ body {
 }
 
 .title-container .button {
-  position: relative;
-  top: -4em;
-  left: 60em;
+  position: absolute;
+  top: 12em;
+  left: 90%;
 }
 
 .title-container subtitle {
@@ -144,5 +144,15 @@ a:visited {
   }
   a:visited {
     color:inherit;
+  }
+}
+@media screen and (max-width: 1344px) {
+  .title-container .button {
+    left: 87%;
+  }
+}
+@media screen and (max-width: 864px) {
+  .title-container .button {
+    left: 80%;
   }
 }
