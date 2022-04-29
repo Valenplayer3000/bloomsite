@@ -6,7 +6,7 @@ const Home = () => {
             <div className="title-container">
                 <h1 className="title bold">StationaryStation</h1>
                 <p className="subtitle medium bold">A teen developer with knowleage of react and typescript</p>
-                <Link to="/about"><button className="button learn">Learn More</button></Link>
+                <Link to="/about"><button className="button learn">About StationaryStation</button></Link>
             </div>
             <hr />
             <h2>Last Posts</h2>
