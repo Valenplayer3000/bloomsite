@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const About = () => {
     return (
         <>
@@ -30,7 +30,7 @@ const About = () => {
             <hr />
             <h2 className="bold">Information</h2>
             <p className="content">Stationarystation (also known as @DumplingFurry on twitter) is a 15 year old teenage developer who likes drawing and coding part-time projects that he enjoys making and as well challenge himself to be better at something he loves watching. He plays Krunker.io, Team Fortress 2, Minecraft, Trackmania Nations Forever, Trackmania 2 Stadium, Quaver and Osu!</p>
-            <p className="content">One of his best projects so far has been StationBot, a Discord.JS (v12) bot made because he wanted to try and make something new that would help him on his javascript/typescript journey. To learn more about the bot <a href="https://github.com/stationarystation/stationbot">click here</a>.</p>
+            <p className="content">One of his best projects so far has been StationBot, a Discord.JS (v12) bot made because he wanted to try and make something new that would help him on his javascript/typescript journey. To learn more about the bot <Link to={{ pathname:"https://github.com/stationarystation/stationbot" }}>click here</Link>.</p>
         </>
     );
 }

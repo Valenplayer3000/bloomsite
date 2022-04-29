@@ -10,7 +10,7 @@ const ProjectDirectory = () => {
                 <div className="active-dev">
                     <h2 className="bold">Perezbueno.xyz</h2>
                     <p>The page for family projects made for a small nieche project for a coding class</p>
-                    <a href="https://perezbueno.xyz"><button className="button link">Go to website</button></a>
+                    <Link to={{ pathname:"https://perezbueno.xyz"}}><button className="button link">Go to website</button></Link>
                 </div>
             </div>
         </>
