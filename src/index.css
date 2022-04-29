@@ -112,9 +112,6 @@ body {
   padding: 10px;
 }
 
-.dropdown .dropdown-content li {
-  text-decoration: none;
-}
 
 .navbar .dropdown:hover .dropdown-content {
   visibility: visible;
@@ -133,7 +130,7 @@ body {
     color: rgb(255, 255, 255);
     background-color: var(--dark-color-secondary);
   }
-  .dropdown-content {
+  .navbar .dropdown-content {
     background-color: var(--dark-color-secondary);
     color: rgb(255, 255, 255);
   }
