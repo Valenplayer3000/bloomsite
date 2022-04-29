@@ -10,6 +10,7 @@ import {
 import Home from './pages/Home'
 import About from './pages/About'
 import NotFound from './pages/not_found'
+import ProjectDirectory from './pages/ProjectDirectory'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/404" element={<NotFound />} />
+        <Route path='/projects' element={<ProjectDirectory />} />
         <Route path="*" element={<Navigate replace to="/404" />} />
       </Routes>
     </React.StrictMode>

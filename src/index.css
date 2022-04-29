@@ -15,8 +15,6 @@
   --dark-color-bkg: #221D23;
   --dark-color-primary: #D6FFF6;
   --dark-color-secondary: #231651;
-  --color-navbar: #FCF7F8;
-  --color-dropdown: #E3E7D3;
 }
 
 body {
@@ -80,7 +78,7 @@ body {
 }
 .navbar-container {
   overflow: hidden;
-  background-color: var(--color-navbar);
+  background-color: var(--color-secondary);
   border-radius: 5px;
 }
 .navbar-container * {
@@ -99,7 +97,7 @@ body {
   padding: 10px;
 }
 .navbar .dropdown-content {
-  background-color: var(--color-navbar);
+  background-color: var(--color-secondary);
   visibility: hidden;
   opacity: 0;
   position: absolute;
