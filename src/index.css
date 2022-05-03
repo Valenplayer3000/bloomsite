@@ -117,6 +117,18 @@ a:visited {
   padding: 10px;
 }
 
+.navbar img {
+  position: relative;
+  left: 78rem;
+  top: 7px;
+}
+
+.navbar img:hover {
+  cursor: default;
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out 0s; 
+}
+
 
 .navbar .dropdown:hover .dropdown-content {
   visibility: visible;

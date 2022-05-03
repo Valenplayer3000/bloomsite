@@ -18,6 +18,7 @@ const Navbar = () => {
                         </div>
                    </div>   
                 </li>
+                <li><img width={25} height={25} src="src/images/svg/proto.svg" /></li>
             </ul>
         </div>
     );
