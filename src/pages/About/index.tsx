@@ -7,17 +7,22 @@ const About = () => {
             <hr />
             <h2 className="bold">Projects</h2>
             <div className="project-container">
-                <div className="project c1">
+                <div className="project">
                     <h3 className="project-header">StationBot</h3>
                     <p className="project-subtitle">A nodejs bot made with the discord.js library focused on performance and customability</p>
                 </div>
-                <div className="project c2">
+                <div className="project">
                     <h3 className="project-header">Perezbueno.xyz</h3>
                     <p className="project-subtitle">Family page for small projects made in next.js and react</p>
                 </div>
-                <div className="project c3">
+                <div className="project">
                     <h3 className="project-header">Gtk-rs example</h3>
                     <p className="project-subtitle">A example application made to learn rust and the gtk4 framework</p>
+                </div>
+                <div className="project">
+                    <h3 className="project-header">AtlasOS Wallpaper Pack</h3>
+                    <p className="project-subtitle">A bunch of wallpapers inspired by AtlasOS made by me on my &quot;Spare Time&quot;</p>
+                    <a href="/src/Resources/Downloads/Atlas Wallpaper Pack.zip"><button className="button">Download Now</button></a>
                 </div>
             </div>
             <hr />
