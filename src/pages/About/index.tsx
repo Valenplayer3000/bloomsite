@@ -22,7 +22,7 @@ const About = () => {
                 <div className="project">
                     <h3 className="project-header">AtlasOS Wallpaper Pack</h3>
                     <p className="project-subtitle">A bunch of wallpapers inspired by AtlasOS made by me on my &quot;Spare Time&quot;</p>
-                    <a href="/src/Resources/Downloads/Atlas Wallpaper Pack.zip"><button className="button">Download Now</button></a>
+                    <a href="https://github.com/stationaryStation/portfolio/raw/master/src/Resources/Downloads/Atlas%20Wallpaper%20Pack.zip"><button className="button">Download Now</button></a>
                 </div>
             </div>
             <hr />
