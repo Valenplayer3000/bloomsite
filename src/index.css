@@ -1,29 +1,53 @@
+/* Import fonts from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 :root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* Colorscheme */
 
-  --color-bkg: #E9F1F7;
-  --color-primary: #623CEA;
-  --color-secondary: #e7dfc6;
-  --color-confirm: #D0EFB1;
+  --color-bkg: #f3feff;
+  --color-primary: #3e8bff;
+  --color-primary-hover: #3b7cde;
+  --color-secondary: #c5d5ff;
+  --color-confirm: var(--color-primary);
+  --color-confirm-hover: var(--color-primary-hover);
   --color-danger: #F78154;
-  --dark-color-bkg: #221D23;
-  --dark-color-primary: #D6FFF6;
-  --dark-color-secondary: #231651;
+
+  --code-background: #161320;
+  --code-foreground: #D9E0EE;
+  --code-func: #96CDFB;
+  --code-var: #F28FAD;
+  --code-statement: #ABE9B3;
+
+  /* Fonts */
+  --title-font: 'Raleway';
+  --subtitle-font: 'Inter';
+  --body-font: 'Inter';
+  --code-font: 'Jetbrains Mono'
+  --title-weight: 900;
+  --subtitle-weight: 700;
+  --body-weight: 400;
+  --title-size: 36px;
+  --subtitle-size: 25px;
+  --body-size: 14px;
 }
 
 body {
+  font-family: var(--body-font);
+  font-size: var(--body-size);
+  font-weight: var(--body-weight);
   background-color: var(--color-bkg);
   color: #000;
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .button {
@@ -39,12 +63,14 @@ body {
 }
 
 .button:hover {
-  background-color: var(--color-secondary);
-  color: #000;
+  background-color: var(--color-primary-hover);
 }
 .learn {
   background-color: var(--color-confirm);
   color: #000;
+}
+.learn:hover {
+  background-color: var(--color-confirm-hover);
 }
 
 .title-container {
@@ -54,7 +80,9 @@ body {
 }
 
 .title {
-  font-size: 40px;
+  font-family: var(--title-font);
+  font-weight: var(--title-weight);
+  font-size: var(--title-size);
 }
 
 .title-container .button {
@@ -63,11 +91,17 @@ body {
   left: 90%;
 }
 
-.title-container subtitle {
-  flex: 2;
+.subtitle {
+  font-family: var(--subtitle-font);
+  font-weight: var(--subtitle-weight);
+  font-size: var(--subtitle-size);
 }
 
 .post-container {
+  background-color: var(--color-secondary);
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
   display: flex;
   flex-flow: column;
 }
@@ -77,6 +111,7 @@ body {
   padding-bottom: none;
 }
 .navbar-container {
+  font-family: var(--body-font);
   overflow: hidden;
   background-color: var(--color-secondary);
   border-radius: 5px;
@@ -137,27 +172,29 @@ a:visited {
   opacity: 1;
   display: block;
 }
-
-@media screen and (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--dark-color-bkg);
-    color: #fff;
-  }
-  .navbar {
-    color: rgb(255, 255, 255);
-    background-color: var(--dark-color-secondary);
-  }
-  .navbar .dropdown-content {
-    background-color: var(--dark-color-secondary);
-    color: rgb(255, 255, 255);
-  }
-  a:link {
-   color: rgb(255, 255, 255); 
-  }
-  a:visited {
-    color:inherit;
-  }
+.post-container {
+  display: flex;
 }
+.project {
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 5px;
+  background-color: var(--color-secondary);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.project p {
+  color: #000;
+}
+.button-container a {
+  display: block;
+  position: relative;
+  top: -3.8rem;
+  left: -1rem;
+  float: right;
+}
+
+
 @media screen and (max-width: 1344px) {
   .title-container .button {
     left: 87%;

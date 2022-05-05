@@ -4,12 +4,10 @@ const Home = () => {
     return (
         <>
             <div className="title-container">
-                <h1 className="title bold">StationaryStation</h1>
-                <p className="subtitle medium bold">A teen developer with knowleage of react and typescript</p>
-                <Link to="/about"><button className="button learn">About StationaryStation</button></Link>
+                <h1 className="title bold">Home</h1>
             </div>
             <hr />
-            <h2>Last Posts</h2>
+            <h1 className="title">Last Posts</h1>
             <div className="post-container">
                 <h3 className="title bold">First place on a interscholar sports competition</h3>
                 <p className="metadata bold">Written by Raul (Station) Perez @ | 9:28AM | 29 | April | 2022 |</p>
