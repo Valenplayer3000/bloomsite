@@ -29,7 +29,7 @@
   --title-font: 'Raleway';
   --subtitle-font: 'Inter';
   --body-font: 'Inter';
-  --code-font: 'Jetbrains Mono'
+  --code-font: 'JetBrains Mono', monospace;
   --title-weight: 900;
   --subtitle-weight: 700;
   --body-weight: 400;
@@ -45,11 +45,29 @@ body {
   background-color: var(--color-bkg);
   color: #000;
 }
-
+code {
+  color: var(--code-foreground);
+  background-color: var(--code-background);
+  font-family: var(--code-font);
+  padding: 5px;
+  border-radius: 5px;
+  width: 100vh;
+}
+.func {
+  color: var(--code-func);
+}
+.var {
+  color: var(--code-var);
+}
+.statement {
+  color: var(--code-statement);
+}
 .bold {
   font-weight: 400;
 }
-
+.metadata {
+  margin-left: 5px;
+}
 .button {
   display: inline-block;
   border: none;
@@ -64,6 +82,15 @@ body {
 
 .button:hover {
   background-color: var(--color-primary-hover);
+  cursor: pointer;
+}
+.disabled {
+  background-color: var(--color-secondary);
+  color: rgb(98, 98, 98);
+}
+.disabled:hover {
+  background: var(--color-secondary);
+  color: rgb(98, 98, 98);
 }
 .learn {
   background-color: var(--color-confirm);
@@ -105,10 +132,19 @@ body {
   display: flex;
   flex-flow: column;
 }
+.post-container .title {
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
 
 .post-container .title {
   font-size: 30px;
   padding-bottom: none;
+}
+.post-container p {
+  margin-left: 5px;
 }
 .navbar-container {
   font-family: var(--body-font);

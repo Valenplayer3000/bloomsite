@@ -10,7 +10,7 @@ const Home = () => {
             <h1 className="title">Last Posts</h1>
             <div className="post-container">
                 <h3 className="title bold">First place on a interscholar sports competition</h3>
-                <p className="metadata bold">Written by Raul (Station) Perez @ | 9:28AM | 29 | April | 2022 |</p>
+                <code className="metadata"><span className="statement">Written by:</span> Raul (Station) Perez <span className="var">@</span> | <span className="func">9:28AM</span> | 29 | April | 2022 |</code>
                 <p className="content">So today I was on a sports competition and got first place on my category, which was amazing, because I wasn&apos;t prepared bacause another student was going to participate but got his wrist hurt and couln't participate, so the teachers decided that it was fine to replace that student with me. </p>
                 <p className="content">The competition was divided in two parts: Jumping Jacks and Pushups</p>
                 <p className="content">I was a little bit behind the competition on the Jumping Jacks but absolutely <span className="bold">dominated</span> the competition on the pushups.</p>
