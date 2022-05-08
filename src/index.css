@@ -1,8 +1,7 @@
 /* Import fonts from fonts.google.com */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
   margin: 0;
@@ -17,19 +16,19 @@
   --color-secondary: #c5d5ff;
   --color-confirm: var(--color-primary);
   --color-confirm-hover: var(--color-primary-hover);
-  --color-danger: #F78154;
+  --color-danger: #f78154;
 
   --code-background: #161320;
-  --code-foreground: #D9E0EE;
-  --code-func: #96CDFB;
-  --code-var: #F28FAD;
-  --code-statement: #ABE9B3;
+  --code-foreground: #d9e0ee;
+  --code-func: #96cdfb;
+  --code-var: #f28fad;
+  --code-statement: #abe9b3;
 
   /* Fonts */
-  --title-font: 'Raleway';
-  --subtitle-font: 'Inter';
-  --body-font: 'Inter';
-  --code-font: 'JetBrains Mono', monospace;
+  --title-font: "Raleway";
+  --subtitle-font: "Inter";
+  --body-font: "Inter";
+  --code-font: "JetBrains Mono", monospace;
   --title-weight: 900;
   --subtitle-weight: 700;
   --body-weight: 400;
@@ -51,7 +50,7 @@ code {
   font-family: var(--code-font);
   padding: 5px;
   border-radius: 5px;
-  width: 100vh;
+  width: fit-content;
 }
 .func {
   color: var(--code-func);
@@ -63,7 +62,7 @@ code {
   color: var(--code-statement);
 }
 .bold {
-  font-weight: 400;
+  font-weight: var(--subtitle-weight);
 }
 .metadata {
   margin-left: 5px;
@@ -77,7 +76,7 @@ code {
   border-radius: 5px;
   width: 10em;
   height: 3em;
-  transition: all .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .button:hover {
@@ -168,10 +167,10 @@ code {
   padding: 10px;
 }
 a:link {
-  color: rgb(0, 0, 0); 
+  color: rgb(0, 0, 0);
 }
 a:visited {
-  color:inherit;
+  color: inherit;
 }
 .navbar .dropdown-content {
   background-color: var(--color-secondary);
@@ -183,7 +182,7 @@ a:visited {
   margin-top: 1rem;
   top: 40px;
   left: auto;
-  display: none; 
+  display: none;
   z-index: 1;
   padding: 10px;
 }
@@ -197,9 +196,8 @@ a:visited {
 .navbar img:hover {
   cursor: default;
   transform: rotate(360deg);
-  transition: all 0.3s ease-in-out 0s; 
+  transition: all 0.3s ease-in-out 0s;
 }
-
 
 .navbar .dropdown:hover .dropdown-content {
   visibility: visible;
@@ -229,7 +227,6 @@ a:visited {
   left: -1rem;
   float: right;
 }
-
 
 @media screen and (max-width: 1344px) {
   .title-container .button {
