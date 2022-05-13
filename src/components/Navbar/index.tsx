@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import proto_svg from "../../Resources/proto.svg";
 
 const Navbar = () => {
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
           </div>
         </li>
         <li>
-          <img width={25} height={25} src="/assets/images/svg/proto.svg" />
+          <img width={25} height={25} src={proto_svg} />
         </li>
       </ul>
     </div>

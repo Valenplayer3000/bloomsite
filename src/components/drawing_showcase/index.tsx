@@ -12,7 +12,7 @@ const DrawingShowcase = () => {
             <img
             width={256}
             height={256}
-            src="public/assets/img/station.png"
+            src="/assets/img/station.png"
             alt={titles[0] + " " + descriptions[0]}
             />
         </div>
