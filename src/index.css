@@ -183,15 +183,13 @@ code {
   text-decoration: none;
   text-align: center;
   padding: 10px;
+  color: #fff;
 }
 
 .navbar a:hover {
   background-color: var(--color-navbar-hover);
 }
 
-.nav a:visited, a:link {
-  color: #fff;
-}
 
 .dropdown-content {
   background-color: var(--color-navbar);
