@@ -190,7 +190,7 @@ code {
 }
 
 .nav a:visited, a:link {
-  color: inherit;
+  color: #fff;
 }
 
 .dropdown-content {
