@@ -4,7 +4,9 @@ import { Link } from "react-router-dom"
 const ProjectDirectory = () => {
   return (
     <>
-      <h1 className="title">Project Directory</h1>
+      <div className="title-container">
+        <h1 className="title">Project Directory</h1>
+      </div>
       <hr />
       <div className="active-project-container">
         <div className="active-dev">

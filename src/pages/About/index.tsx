@@ -4,7 +4,9 @@ import DrawingShowcase from "../../components/drawing_showcase"
 const About = () => {
   return (
     <>
-      <h1 className="title bold">About StationaryStation</h1>
+      <div className="title-container">
+        <h1 className="title bold">About StationaryStation</h1>
+      </div>
       <hr />
       <h2 className="bold">Projects</h2>
       <div className="project-container">

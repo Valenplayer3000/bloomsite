@@ -1,10 +1,10 @@
 import React from "react"
-import { Link } from "react-router-dom"
+
 const Home = () => {
   return (
     <>
       <div className="title-container">
-        <h1 className="title bold">Home</h1>
+        <h1 className="title">Home</h1>
       </div>
       <hr />
       <h1 className="title">Last Posts</h1>
