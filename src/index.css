@@ -4,7 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-  margin: 0;
+  margin: 0 0;
+  padding: 0 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -110,7 +111,14 @@ code {
   font-weight: var(--title-weight);
   font-size: var(--title-size);
 }
+.title-small {
+  font-size: var(--subtitle-size);
+}
 
+.description {
+  font-weight: var(--subtitle-weight);
+  font-size: var(--body-size);
+}
 .title-container .button {
   position: absolute;
   top: 12em;

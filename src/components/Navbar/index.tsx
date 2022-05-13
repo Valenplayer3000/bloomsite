@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
         </li>
         <li>
-          <img width={25} height={25} src="src/images/svg/proto.svg" />
+          <img width={25} height={25} src="/assets/images/svg/proto.svg" />
         </li>
       </ul>
     </div>

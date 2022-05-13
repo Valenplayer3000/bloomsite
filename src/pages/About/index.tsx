@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import DrawingShowcase from "../../components/drawing_showcase"
 const About = () => {
   return (
     <>
@@ -42,9 +43,7 @@ const About = () => {
       <hr />
       <h2 className="bold">Drawings</h2>
       <div className="drawing-container">
-        <div className="drawing c1">
-          <h3 className="drawing-header">Comming soon...</h3>
-        </div>
+        <DrawingShowcase />
       </div>
       <hr />
       <h2 className="bold">Information</h2>
