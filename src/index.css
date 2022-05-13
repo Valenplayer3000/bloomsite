@@ -189,11 +189,7 @@ code {
   background-color: var(--color-navbar-hover);
 }
 
-a:link {
-  color: rgb(0, 0, 0);
-}
-
-a:visited {
+.nav a:visited, a:link {
   color: inherit;
 }
 
