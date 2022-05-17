@@ -1,31 +1,34 @@
 import React from "react";
+import ImageGallery from 'react-image-gallery';
 
 const DrawingShowcase = () => {
-    const titles = ["Station Sketch #1", "No thoughts, Head empty"];
-    const descriptions = ["One of the many sketches of his oc", "Dumb drawing made for the memes and to practice coloring with a base20 colorscheme"];
+    const Images = [
+        {
+            original: 'assets/img/station.png',
+            loading: 'lazy',
+            thumbnailTitle: 'Current Profile Picture',
+            description: 'Current PFP on revolt.chat',
+            originalWidth: 500,
+            originalHeight: 500
+        },
+        {
+            original: 'assets/img/no_thoughts_head_empty.png',
+            loading: 'lazy',
+            thumbnailTitle: 'No thoughts, Head Empty',
+            description: 'Furry meme for the lols, also made because I wanted to try out coloring with a set of 20 colors',
+            originalWidth: 500,
+            originalHeight: 500
+        }
+    ]
     
     return (
         <>
-        <div className="Drawing">
-            <p className="title title-small">{titles[0]}</p>
-            <p className="description">{descriptions[0]}</p>
-            <img
-            width={256}
-            height={256}
-            src="/assets/img/station.png"
-            alt={titles[0] + " " + descriptions[0]}
+            <ImageGallery items={Images}
+            lazyLoad
+            showPlayButton={false}
+            showFullscreenButton={false}
+            slideDuration={500}
             />
-        </div>
-        <div className="Drawing">
-            <p className="title title-small">{titles[1]}</p>
-            <p className="description">{descriptions[1]}</p>
-            <img
-                width={256}
-                height={256}
-                src="/assets/img/no_thoughts_head_empty.png"
-                alt={titles[1] + " " + descriptions[1]}
-            />
-        </div>
         </>
     );
 }
