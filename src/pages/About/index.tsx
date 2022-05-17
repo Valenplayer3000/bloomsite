@@ -41,6 +41,15 @@ const About = () => {
             </a>
           </div>
         </div>
+        <div className="project">
+          <h3 className="project-header">Dotfiles</h3>
+          <p className="project-subtitle">My go-to bspwm config made with love</p>
+          <div className="button-container">
+            <a href="https://github.com/stationaryStation/dotfiles">
+              <button className="button">Github Repo</button>
+            </a>
+          </div>
+        </div>
       </div>
       <hr />
       <h2 className="bold">Drawings</h2>
