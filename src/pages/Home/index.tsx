@@ -4,6 +4,7 @@ import PostsComponent from "../../components/posts"
 const Home = () => {
   return (
     <>
+      <div className="content-container">
       <div className="title-container">
         <h1 className="title">Home</h1>
       </div>
@@ -57,6 +58,7 @@ const Home = () => {
           date="9:28AM @ April 29, 2022"
           author="StationaryStation"
         /> 
+      </div>
     </>
   )
 }

@@ -8,6 +8,7 @@ import NotFound from "./pages/not_found"
 import ProjectDirectory from "./pages/ProjectDirectory"
 import "./index.css"
 import Stbot from "./pages/StationBot"
+import Footer from "./components/footer"
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/projects/stbot" element={<Stbot />} />
         <Route path="*" element={<Navigate replace to="/404" />} />
       </Routes>
+      <Footer />
     </React.StrictMode>
   </BrowserRouter>
 )

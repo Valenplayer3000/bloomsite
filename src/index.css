@@ -55,6 +55,12 @@ code {
   border-radius: 5px;
   width: fit-content;
 }
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .func {
   color: var(--code-func);
 }
@@ -272,6 +278,33 @@ code {
   top: -3.8rem;
   left: -1rem;
   float: right;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--code-background);
+  width: calc(200vh + 10px);
+  font-family: var(--code-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: var(--code-foreground);
+  z-index: 5;
+}
+footer .checkly {
+  color: var(--code-func);
+  margin-right: auto;
+}
+
+footer .update-text {
+  color: var(--code-statement)
+}
+
+.content-container {
+  margin-bottom: 5rem;
 }
 
 @media screen and (max-width: 1344px) {

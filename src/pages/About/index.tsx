@@ -4,6 +4,7 @@ import DrawingShowcase from "../../components/drawing_showcase"
 const About = () => {
   return (
     <>
+      <div className="content-container">
       <div className="title-container">
         <h1 className="title bold">About StationaryStation</h1>
       </div>
@@ -77,6 +78,7 @@ const About = () => {
         </Link>
         .
       </p>
+      </div>
     </>
   )
 }
