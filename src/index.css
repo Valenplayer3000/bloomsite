@@ -142,6 +142,8 @@ code {
   border-radius: 5px;
   display: flex;
   flex-flow: column;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .post-container .title {
   margin: 0;
