@@ -8,6 +8,8 @@ interface postProps {
 }
 
 const PostsComponent = (props: postProps) => {
+    let contentArr: Array<string> = props.content.split(/\r?\\n/);
+    console.log(contentArr);
     return (
         <div className="post-container">
         <h3 className="title bold">
@@ -17,9 +19,15 @@ const PostsComponent = (props: postProps) => {
           <span className="statement">Written by:</span> {props.author}{" "}
           <span className="var">@</span> | <span className="func">{props.date}</span>{" "}
         </code>
-        <p className="content">
-          {props.content}
-        </p>
+          { contentArr.map
+            // c is the content that is going to be returned
+            (c => {
+              return (
+                <p className="content">{c}</p>
+              )
+            }
+          )
+          }
       </div>
     )
 }
