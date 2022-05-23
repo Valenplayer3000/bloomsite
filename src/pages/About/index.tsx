@@ -43,6 +43,17 @@ const About = () => {
           </div>
         </div>
         <div className="project">
+          <h3 className="project-header">Revolt Wallpapers</h3>
+          <p className="project-subtitle">
+            Another set of wallpapers made for the revolt community @ revolt.chat
+          </p>
+          <div className="button-container">
+            <a href="https://github.com/stationaryStation/portfolio/raw/master/src/Resources/Downloads/Revolt%20Wallpapers.zip">
+              <button className="button">Download Now</button>
+            </a>
+          </div>
+        </div>
+        <div className="project">
           <h3 className="project-header">Dotfiles</h3>
           <p className="project-subtitle">My go-to bspwm config made with love</p>
           <div className="button-container">
@@ -60,7 +71,7 @@ const About = () => {
       <hr />
       <h2 className="bold">Information</h2>
       <p className="content">
-        Stationarystation (also known as @DumplingFurry on twitter) is a 15 year
+        Stationarystation (also known as @StationaryStation on miruku.chat) is a 15 year
         old teenage developer who likes drawing and coding part-time projects
         that he enjoys making and as well challenge himself to be better at
         something he loves watching. He plays Krunker.io, Team Fortress 2,
@@ -71,11 +82,11 @@ const About = () => {
         One of his best projects so far has been StationBot, a Discord.JS (v12)
         bot made because he wanted to try and make something new that would help
         him on his javascript/typescript journey. To learn more about the bot{" "}
-        <Link
-          to={{ pathname: "https://github.com/stationarystation/stationbot" }}
+        <a
+          href="https://github.com/stationarystation/stationbot"
         >
           click here
-        </Link>
+        </a>
         .
       </p>
       </div>
