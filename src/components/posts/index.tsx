@@ -1,5 +1,12 @@
 import React from "react";
 
+interface postProps {
+    title: string;
+    date?: string;
+    author?: string;
+    content: string;
+}
+
 /**
  * ---
  * Post Component
@@ -13,7 +20,7 @@ import React from "react";
  * @param {string} author - Post Author
  * @param {string} content - Post Content (Allows \n to create new lines)
  * 
- * @returns {HTMLDivElement}
+ * @returns {HTMLDivElement} Prop-container
  * 
  * @example
  * Make a post with a title of "Hello World" with the content "Hello World!"
@@ -24,14 +31,6 @@ import React from "react";
  * />
  * ``` 
  */
-
-interface postProps {
-    title: string;
-    date?: string;
-    author?: string;
-    content: string;
-}
-
 const PostsComponent = (props: postProps) => {
     /**
      * @type {Array<string>}
@@ -41,6 +40,7 @@ const PostsComponent = (props: postProps) => {
     // Log the content (Debbugging)
     console.log(contentArr? contentArr : "No data found");
     // Return the post container
+
     return (
         <div className="post-container">
         <h3 className="title bold">
