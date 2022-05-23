@@ -46,10 +46,18 @@ const PostsComponent = (props: postProps) => {
         <h3 className="title bold">
           {props.title} 
         </h3>
-        <code className="metadata">
-          <span className="statement">Written by:</span> {props.author}{" "}
-          <span className="var">@</span> | <span className="func">{props.date}</span>{" "}
-        </code>
+        {/* If Props.date and Props.author exists */}
+        {/* Create Metadata component */}
+        {/* else do nothing */}
+        {props.date && props.author ? (
+          <code className="metadata">
+            <span className="statement">Written by:</span> {props.author}{" "}
+            <span className="var">@</span> | <span className="func">{props.date}</span>{" "}
+          </code>
+        ): (
+          null
+        )
+        }
 
         {/* For Each Loop */}
         { contentArr.map
