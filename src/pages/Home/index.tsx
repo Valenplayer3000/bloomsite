@@ -5,16 +5,16 @@ const Home = () => {
   return (
     <>
       <div className="content-container">
-      <div className="title-container">
-        <h1 className="title">Home</h1>
-      </div>
-      <hr />
-      <h1 className="title">Last Posts</h1>
-      <PostsComponent
-        title="Privacy conserns with social media"
-        author="StationaryStation"
-        date="09:13 @ May 23, 2022"
-        content="I&apos;ve made the switch from Discord and Twitter to FOSS alternatives
+        <div className="title-container">
+          <h1 className="title">Home</h1>
+        </div>
+        <hr />
+        <h1 className="title">Last Posts</h1>
+        <PostsComponent
+          title="Privacy conserns with social media"
+          author="StationaryStation"
+          date="09:13 @ May 23, 2022"
+          content="I&apos;ve made the switch from Discord and Twitter to FOSS alternatives
         recently, and so far it has been going smoothly. On this post I am going to speak
         about my experience using those applications and how you can make the switch easily.\n
         I&apos;ve discovered Revolt.chat last week and decided to try it out since It looked prommising.
@@ -23,12 +23,12 @@ const Home = () => {
         some bios I found a intresting social media called miruku.chat.\n
         It's based on mastodon, which already is a fully free and open source software what is like twitter,
         but good. Everyone is nice to you there and there isn&apos;t any drama sorounding mastodon or miruku."
-      />
-      <PostsComponent
-        title="Talents and Quaver"
-        author="StationaryStation"
-        date="1:08PM @ May 5, 2022"
-        content="Hello Again, in this post I will discuss what I am going to do
+        />
+        <PostsComponent
+          title="Talents and Quaver"
+          author="StationaryStation"
+          date="1:08PM @ May 5, 2022"
+          content="Hello Again, in this post I will discuss what I am going to do
         for my school&apos;s talent show and my current status as a quaver player.
         \n
         So on 26 of May 2022, my school is going to do a really neat event, a talent show.
@@ -44,10 +44,10 @@ const Home = () => {
         hard and unlikely to happen. But atleast I can have bragging rights for reaching such an achivement.
         (I mean, I reached somehow 1st place on a map I don&apos;t even recall playing anyway, but I have an 
         achivement for doing so.)"
-      />      
-      <PostsComponent
-        title="First Place on a insterscholar sports competition"
-        content="So today I was on a sports competition and got first place on my
+        />
+        <PostsComponent
+          title="First Place on a insterscholar sports competition"
+          content="So today I was on a sports competition and got first place on my
           category, which was amazing, because I wasn&apos;t prepared bacause
           another student was going to participate but got his wrist hurt and
           couln't participate, so the teachers decided that it was fine to
@@ -70,7 +70,7 @@ const Home = () => {
           this was too sudden for my body)"
           date="9:28AM @ April 29, 2022"
           author="StationaryStation"
-        /> 
+        />
       </div>
     </>
   )

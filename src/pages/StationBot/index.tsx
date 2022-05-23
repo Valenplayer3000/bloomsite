@@ -1,6 +1,9 @@
 import React from "react";
 
 const Stbot = () => {
+    // This page will be deprecated in a future update to the site
+    // Since I no longer maintain Stationbot anymore
+    
     return (
         <>
             <div className="title-container">

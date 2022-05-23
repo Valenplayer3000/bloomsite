@@ -2,6 +2,9 @@ import React from "react";
 import ImageGallery from 'react-image-gallery';
 
 const DrawingShowcase = () => {
+    // This Image Gallery could be a little bit more performant if it wasn't a goddamm lib
+    // Why did I install it instead of making my own
+
     const Images = [
         {
             original: 'assets/img/station.png',
