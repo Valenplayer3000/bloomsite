@@ -39,8 +39,8 @@ const PostsComponent = (props: postProps) => {
 
     // Log the content (Debbugging)
     console.log(contentArr? contentArr : "No data found");
+    
     // Return the post container
-
     return (
         <div className="post-container">
         <h3 className="title bold">
