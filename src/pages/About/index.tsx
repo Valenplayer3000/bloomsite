@@ -37,9 +37,9 @@ const About = () => {
             &quot;Spare Time&quot;
           </p>
           <div className="button-container">
-            <a href="https://github.com/stationaryStation/portfolio/raw/master/src/Resources/Downloads/Atlas%20Wallpaper%20Pack.zip">
+            <Link to={{ pathname: "https://github.com/stationarystation/portfolio/raw/master/src/Resources/Downloads/Atlas%20Wallpaper%20Pack.zip" }} target="_blank">
               <button className="button">Download Now</button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="project">
@@ -48,18 +48,18 @@ const About = () => {
             Another set of wallpapers made for the revolt community @ revolt.chat
           </p>
           <div className="button-container">
-            <a href="https://github.com/stationaryStation/portfolio/raw/master/src/Resources/Downloads/Revolt%20Wallpapers.zip">
+            <Link to={{ pathname: "https://github.com/stationaryStation/portfolio/raw/master/src/Resources/Downloads/Revolt%20Wallpapers.zip" }} target="_blank">
               <button className="button">Download Now</button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="project">
           <h3 className="project-header">Dotfiles</h3>
           <p className="project-subtitle">My go-to bspwm config made with love</p>
           <div className="button-container">
-            <a href="https://github.com/stationaryStation/dotfiles">
+            <Link to={{ pathname: "https://github.com/stationaryStation/dotfiles" }} target="_blank">
               <button className="button">Github Repo</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
