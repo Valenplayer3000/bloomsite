@@ -13,7 +13,7 @@ const PostsComponent = (props: postProps) => {
     return (
         <div className="post-container">
         <h3 className="title bold">
-         {props.title} 
+          {props.title} 
         </h3>
         <code className="metadata">
           <span className="statement">Written by:</span> {props.author}{" "}
