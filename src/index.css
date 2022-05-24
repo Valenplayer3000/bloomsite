@@ -303,6 +303,44 @@ footer .update-text {
   color: var(--code-statement)
 }
 
+.quaver {
+  background-color: var(--code-background);
+  color: var(--code-foreground);
+  font-family: var(--code-font);
+  display: flex;
+  border-radius: 10px;
+}
+
+.quaver * {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.quaver .pfp {
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.quaver .marv {
+  background: -webkit-linear-gradient(50deg, rgba(250,227,176,1) 0%, rgba(242,143,173,1) 50%, rgba(150,205,251,1) 100%); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quaver .username {
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+}
+
+.quaver .stats {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
 .content-container {
   margin-bottom: 5rem;
 }

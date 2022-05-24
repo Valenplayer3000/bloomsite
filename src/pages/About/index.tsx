@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import DrawingShowcase from "../../components/drawing_showcase"
+import QuaverStats from "../../components/quaver"
 const About = () => {
   return (
     <>
@@ -89,6 +90,7 @@ const About = () => {
         </a>
         .
       </p>
+      <QuaverStats id={37369} mode={1} />
       </div>
     </>
   )

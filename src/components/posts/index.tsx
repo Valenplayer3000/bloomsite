@@ -32,9 +32,6 @@ interface postProps {
  * ``` 
  */
 const PostsComponent = (props: postProps) => {
-    /**
-     * @type {Array<string>}
-     */
     let contentArr: Array<string> = props.content.split(/\r?\\n/);
 
     // Log the content (Debbugging)
@@ -52,10 +49,10 @@ const PostsComponent = (props: postProps) => {
         {props.date && props.author ? (
           <code className="metadata">
             <span className="statement">Written by:</span> {props.author}{" "}
-            <span className="var">@</span> | <span className="func">{props.date}</span>{" "}
+            | <span className="func">{props.date}</span>{" "}
           </code>
         ): (
-          null
+          <></>
         )
         }
 
