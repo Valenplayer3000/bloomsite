@@ -21,6 +21,22 @@ const DrawingShowcase = () => {
             description: 'Furry meme for the lols, also made because I wanted to try out coloring with a set of 20 colors',
             originalWidth: 500,
             originalHeight: 500
+        },
+        {
+            original: 'assets/img/banner(again).png',
+            loading: 'lazy',
+            thumbnailTitle: 'Miruku.cafe Banner',
+            description: 'haha female station go brrr',
+            originalWidth: 500,
+            originalHeight: 500
+        },
+        {
+            original: 'assets/img/toaster.png',
+            loading: 'lazy',
+            thumbnailTitle: 'Toaster',
+            description: 'Protogen = Toaster, Can\'t change my mind',
+            originalWidth: 500,
+            originalHeight: 500
         }
     ]
     
