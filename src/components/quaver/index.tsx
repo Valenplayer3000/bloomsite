@@ -2,10 +2,10 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 interface quaverapi {
-  id?: number;
-  mapid?: number;
-  mapsetid?: number;
-  mode?: number;
+  id?: number | string;
+  mapid?: number | string;
+  mapsetid?: number | string;
+  mode?: number | string;
 }
 
 /**
@@ -84,6 +84,7 @@ const QuaverStats = (props: quaverapi) => {
   // Load data when component mounts
   useEffect(() => {
     getData();
+    console.log()
   }, []);
 
   return (

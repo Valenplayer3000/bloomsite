@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import NotFound from './pages/not_found';
 import ProjectDirectory from './pages/ProjectDirectory';
 import Stbot from './pages/StationBot';
+import Quaverfy from './pages/quaverfy';
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <HashRouter>
@@ -32,6 +33,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route
           path='/projects/stbot'
           element={<Stbot />}
+        />
+        <Route
+          path="/api/v1/quaverfy/:id/:mode"
+          element={<Quaverfy/>}
         />
         <Route
           path='*'
