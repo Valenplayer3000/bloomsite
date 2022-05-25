@@ -22,12 +22,28 @@ interface quaverapi {
 const QuaverStats = (props: quaverapi) => {
     // Declare variables
     const [loading, setLoading] = useState<boolean>(true);
-    const [user, setUser] = useState<string>();
-    const [pfp, setPFP] = useState<string>();
-    const [stats, setStats] = useState<string[]>();
-    const [country, setCountry] = useState<string>();
-    const [latest, setLatest] = useState<string>();
-    
+    const [user, setUser] = useState<string>("NO USER");
+    const [pfp, setPFP] = useState<string>("");
+    const [stats, setStats] = useState<string[] | number[] | null>();
+    const [country, setCountry] = useState<string>("UWU");
+    const [latest, setLatest] = useState<string>("6969-69-69 - 69:420pm");
+
+    const calculateDiff = (diff: number | string) => {
+        if (diff < 1.00) {
+            return "#B5E8E0";
+        } else if (diff > 1.00 && diff < 2.50) {
+            return "#ABE9B3";
+        } else if (diff > 2.50 && diff < 10.00) {
+            return "#96CDFB";
+        } else if (diff > 10.00 && diff < 20.00) {
+            return "#F8BD96";
+        } else if (diff > 20.00 && diff < 30.00) {
+            return "#F28FAD";
+        } else if (diff > 30.00) {
+            return "#DDB6F2";
+        }
+    }
+
     // Get user information via api.quavergame.com
     const getData = async () => {
         try {
@@ -49,7 +65,8 @@ const QuaverStats = (props: quaverapi) => {
                         res.data.scores[0].count_good,
                         res.data.scores[0].count_ok,
                         res.data.scores[0].count_miss,
-                        res.data.scores[0].map.title
+                        res.data.scores[0].map.title,
+                        Math.round((res.data.scores[0].performance_rating + Number.EPSILON) * 100) / 100
                     ]);
                 })
         } catch (err) {
@@ -65,55 +82,65 @@ const QuaverStats = (props: quaverapi) => {
 
     return (
         <>
-        {/* Only load component when getData finishes */}
-        {loading? (
-        <div className="quaver">
-            <p>QuaverStats Loading...</p>
-        </div>
-        ) : (
-            <div className="quaver" key={props.id}>
-            <div>
-                {pfp ? (
-                    <img
-                        className="quaver pfp"
-                        src={pfp}
-                    />
-                ) : (
-                    null
-                )
-                }
-                {user ? (
-                    <>
-                        <p className="quaver username">{user}</p>
-                        <div>
-                            <p className="quaver content">ID:{props.id}</p>
-                            <p className="quaver content">Country: {country}</p>
-                        </div>
-                    </>
-                )
-                    : (
-                        null
-                    )
-                }
-            </div>
-            {
-                stats ? (
-                    <div className="stats">
-                        <p className="quaver subtitle">Recent Play: {stats[6] || null}</p>
-                        <p className="quaver marv">Marv: {stats[0] || 0}</p>
-                        <p className="quaver perf">Perf: {stats[1] || 0}</p>
-                        <p className="quaver great">Great: {stats[2] || 0}</p>
-                        <p className="quaver good">Good: {stats[3] || 0}</p>
-                        <p className="quaver ok">Ok: {stats[4] || 0}</p>
-                        <p className="quaver miss">Miss: {stats[5] || 0}</p>
-                        <p className="quaver content">Updated at: {latest}</p>
+            {/* Only load component when getData finishes */}
+            {loading ? (
+                <div className="quaver">
+                    <p>QuaverStats Loading...</p>
+                </div>
+            ) : (
+                <div className="quaver" key={props.id}>
+                    <div>
+                        {pfp ? (
+                            <img
+                                className="quaver pfp"
+                                src={pfp}
+                            />
+                        ) : (
+                            null
+                        )
+                        }
+                        {user ? (
+                            <>
+                                <p className="quaver username">{user}</p>
+                                <div>
+                                    <p className="quaver content">ID:{props.id}</p>
+                                    <p className="quaver content">Country: {country}</p>
+                                    <p className="quaver content">Updated at: {latest}</p>
+                                </div>
+                            </>
+                        )
+                            : (
+                                null
+                            )
+                        }
                     </div>
-                ) : (
-                    null
-                )
-            }
-        </div>
-        )}
+                    {
+                        stats ? (
+                            <div className="mapstats">
+                                <p className="quaver subtitle">Recent Play: {stats[6] || "Mapset Not found lmao"}</p>
+                                <p
+                                    className="quaver diff"
+                                >
+                                    Difficulty Rating:{' '}<span
+                                        style={{
+                                            color: calculateDiff(stats[7] || 0.00)
+                                        }}>
+                                        {stats[7] || 0.00}
+                                    </span>
+                                </p>
+                                <p className="quaver marv">Marv: {stats[0] || 0}</p>
+                                <p className="quaver perf">Perf: {stats[1] || 0}</p>
+                                <p className="quaver great">Great: {stats[2] || 0}</p>
+                                <p className="quaver good">Good: {stats[3] || 0}</p>
+                                <p className="quaver ok">Ok: {stats[4] || 0}</p>
+                                <p className="quaver miss">Miss: {stats[5] || 0}</p>
+                            </div>
+                        ) : (
+                            null
+                        )
+                    }
+                </div>
+            )}
         </>
     )
 }

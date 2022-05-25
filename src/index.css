@@ -167,7 +167,7 @@ a {
 }
 
 .navbar {
-  z-index: 1;
+  z-index: 5;
   position: -webkit-sticky; /* Safari */
   position: fixed;
   top: 0;
@@ -329,6 +329,26 @@ footer .update-text {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.quaver .perf {
+  color: #FAE3B0;
+}
+
+.quaver .great {
+  color: #B5E8E0;
+}
+
+.quaver .good {
+  color: #ABE9B3;
+}
+
+.quaver .ok {
+  color: #DDB6F2;
+}
+
+.quaver .miss {
+  color: #F28FAD;
 }
 
 .quaver .username {
