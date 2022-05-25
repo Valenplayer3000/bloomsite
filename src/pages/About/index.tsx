@@ -79,17 +79,8 @@ const About = () => {
         Minecraft, Trackmania Nations Forever, Trackmania 2 Stadium, Quaver and
         Osu!
       </p>
-      <p className="content">
-        One of his best projects so far has been StationBot, a Discord.JS (v12)
-        bot made because he wanted to try and make something new that would help
-        him on his javascript/typescript journey. To learn more about the bot{" "}
-        <a
-          href="https://github.com/stationarystation/stationbot"
-        >
-          click here
-        </a>
-        .
-      </p>
+      <h2 className="subtitle">Social Media</h2>
+      <p className="content"><a rel="me" href="https://based.social/@Stationarystation">Mastodon</a></p> 
       <QuaverStats id={37369} mode={1} />
       </div>
     </>
