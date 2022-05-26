@@ -1,10 +1,15 @@
 import React from 'react';
-
+import Helmet from 'react-helmet';
 import PostsComponent from '../../components/posts';
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <meta property="og:title" content="Home @ StationSite" />
+        <meta property="og:image" content="/assets/img/thumb.png" />
+        <meta property="og:description" content="StationaryStation's Portfolio" />
+      </Helmet>
       <div className='content-container'>
         <div className='title-container'>
           <h1 className='title'>Home</h1>
