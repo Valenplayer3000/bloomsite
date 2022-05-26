@@ -1,12 +1,11 @@
-import React from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import React from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 
-import proto_svg from '../../Resources/proto.svg';
+import proto_svg from "../../Resources/proto.svg";
 
 const Navbar = () => {
-
-  console.log(location.pathname)
-    return (
+  console.log(location.pathname);
+  return (
     <div className='navbar'>
       <Link to='/'>Home</Link>
       <Link to='/about'>About</Link>

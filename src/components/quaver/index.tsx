@@ -1,5 +1,5 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 interface quaverapi {
   id?: number | string;
@@ -84,7 +84,7 @@ const QuaverStats = (props: quaverapi) => {
   // Load data when component mounts
   useEffect(() => {
     getData();
-    console.log()
+    console.log();
   }, []);
 
   return (
