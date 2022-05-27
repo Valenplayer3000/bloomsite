@@ -1,10 +1,24 @@
-import React from 'react';
-
-import PostsComponent from '../../components/posts';
+import React from "react";
+import { Helmet } from "react-helmet";
+import PostsComponent from "../../components/posts";
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <meta
+          property='og:title'
+          content='Home @ StationSite'
+        />
+        <meta
+          property='og:image'
+          content='/assets/img/thumb.png'
+        />
+        <meta
+          property='og:description'
+          content="StationaryStation's Portfolio"
+        />
+      </Helmet>
       <div className='content-container'>
         <div className='title-container'>
           <h1 className='title'>Home</h1>
@@ -12,18 +26,18 @@ const Home = () => {
         <hr />
         <h1 className='title'>Last Posts</h1>
         <PostsComponent
-          title='Privacy conserns with social media'
+          title='Privacy concerns with social media'
           author='StationaryStation'
           date='09:13 @ May 23, 2022'
           content="I've made the switch from Discord and Twitter to FOSS alternatives
         recently, and so far it has been going smoothly. On this post I am going to speak
         about my experience using those applications and how you can make the switch easily.\n
-        I've discovered Revolt.chat last week and decided to try it out since It looked prommising.
+        I've discovered Revolt.chat last week and decided to try it out since It looked promising.
         So I made an account and joined 'Revolt Lounge', the revolt testing server. I talked a bunch,
         made friends and even got a game for free (Thanks Veiled). Then while I was surfing through
-        some bios I found a intresting social media called miruku.chat.\n
+        some bios I found a interesting social media called miruku.chat.\n
         It's based on mastodon, which already is a fully free and open source software what is like twitter,
-        but good. Everyone is nice to you there and there isn't any drama sorounding mastodon or miruku."
+        but good. Everyone is nice to you there and there isn't any drama surrounding mastodon or miruku."
         />
         <PostsComponent
           title='Talents and Quaver'
@@ -38,20 +52,20 @@ const Home = () => {
         have. I have a bunch of talents up of my sleeve but I think that the best talent that
         I can pull consistently is playing rhythm games like quaver and OSU!Mania. I decided to
         go with Quaver since it's a pretty underrated rhythm game that is fully open-source
-        and self-hostable but still a neat little game to play nowdays.
+        and self-hostable but still a neat little game to play nowadays.
         \n
         I once reached 20th place in my country after not playing for over a year, and now I am doing
         it again but instead of stopping at 20th place, I am going to go for 5th place, which is pretty
-        hard and unlikely to happen. But atleast I can have bragging rights for reaching such an achivement.
+        hard and unlikely to happen. But at least I can have bragging rights for reaching such an achievement.
         (I mean, I reached somehow 1st place on a map I don't even recall playing anyway, but I have an 
-        achivement for doing so.)"
+        achievement for doing so.)"
         />
         <PostsComponent
-          title='First Place on a insterscholar sports competition'
+          title='First Place on a interscholar sports competition'
           content="So today I was on a sports competition and got first place on my
-          category, which was amazing, because I wasn't prepared bacause
+          category, which was amazing, because I wasn't prepared because
           another student was going to participate but got his wrist hurt and
-          couln't participate, so the teachers decided that it was fine to
+          couldn't participate, so the teachers decided that it was fine to
           replace that student with me.
           \n
           The competition was divided in two parts: Jumping Jacks and Pushups
