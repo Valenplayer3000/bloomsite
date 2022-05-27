@@ -15,10 +15,9 @@ const About = () => {
         <h2 className="bold">Projects</h2>
         <div className="project-container">
           <div className="project">
-            <h3 className="project-header">StationBot</h3>
+            <h3 className="project-header">Quaverfy</h3>
             <p className="project-subtitle">
-              A nodejs bot made with the discord.js library focused on
-              performance and customability
+              QuavergameAPI Wrapper made in nextjs and typescript
             </p>
           </div>
           <div className="project">
