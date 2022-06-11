@@ -15,7 +15,6 @@
     "react-dom": "^18.0.0",
     "react-feather": "^2.0.10",
     "react-image-gallery": "^1.2.8",
-    "react-router-dom": "^6.3.0",
     "sass": "^1.52.3"
   },
   "devDependencies": {
