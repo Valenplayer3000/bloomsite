@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import Layout from '../../components/layout';
 
 const ProjectDirectory = () => {
   return (
-    <>
+    <Layout>
       <div className='title-container'>
         <h1 className='title'>Project Directory</h1>
       </div>
@@ -15,7 +16,7 @@ const ProjectDirectory = () => {
             The page for family projects made for a small nieche project for a
             coding class
           </p>
-          <Link to={{ pathname: "https://perezbueno.xyz" }}>
+          <Link passHref href="https://perezbueno.xyz">
             <button className='button link'>Go to website</button>
           </Link>
         </div>
@@ -31,7 +32,7 @@ const ProjectDirectory = () => {
           </button>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 

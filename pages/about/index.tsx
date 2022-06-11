@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import Link from "next/link";
+import Layout from "../../components/layout";
 import DrawingShowcase from "../../components/drawing_showcase";
 import QuaverStats from "../../components/quaver";
 
 const About = () => {
   return (
-    <>
+    <Layout>
       <div className='content-container'>
         <div className='title-container'>
           <h1 className='title bold'>About StationaryStation</h1>
@@ -40,11 +40,7 @@ const About = () => {
             </p>
             <div className='button-container'>
               <Link
-                to={{
-                  pathname:
-                    "https://github.com/stationarystation/portfolio/raw/master/src/Resources/Downloads/Atlas%20Wallpaper%20Pack.zip",
-                }}
-                target='_blank'
+                href="https://github.com/stationarystation/portfolio/raw/master/src/Resources/Downloads/Atlas%20Wallpaper%20Pack.zip"             
               >
                 <button className='button'>Download Now</button>
               </Link>
@@ -58,11 +54,7 @@ const About = () => {
             </p>
             <div className='button-container'>
               <Link
-                to={{
-                  pathname:
-                    "https://github.com/stationaryStation/portfolio/raw/master/src/Resources/Downloads/Revolt%20Wallpapers.zip",
-                }}
-                target='_blank'
+                  href="https://github.com/stationaryStation/portfolio/raw/master/src/Resources/Downloads/Revolt%20Wallpapers.zip"
               >
                 <button className='button'>Download Now</button>
               </Link>
@@ -75,10 +67,7 @@ const About = () => {
             </p>
             <div className='button-container'>
               <Link
-                to={{
-                  pathname: "https://github.com/stationaryStation/dotfiles",
-                }}
-                target='_blank'
+                href="https://github.com/stationaryStation/dotfiles"
               >
                 <button className='button'>Github Repo</button>
               </Link>
@@ -116,7 +105,7 @@ const About = () => {
           mode={1}
         />
       </div>
-    </>
+    </Layout>
   );
 };
 

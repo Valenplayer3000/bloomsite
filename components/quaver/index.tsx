@@ -19,7 +19,7 @@ interface quaverapi {
  *
  * @returns
  */
-const QuaverStats = (props: quaverapi) => {
+const QuaverStats = ({id, mapid, mapsetid, mode}: quaverapi) => {
   // Declare variables
   const [loading, setLoading] = useState<boolean>(true);
   const [user, setUser] = useState<string>("NO USER");
@@ -49,7 +49,7 @@ const QuaverStats = (props: quaverapi) => {
     try {
       setLoading(true);
       await axios
-        .get(`https://api.quavergame.com/v1/users?id=${props.id}`)
+        .get(`https://api.quavergame.com/v1/users?id=${id}`)
         .then(function (res) {
           setUser(res.data.users[0].username);
           setPFP(res.data.users[0].avatar_url);
@@ -59,7 +59,7 @@ const QuaverStats = (props: quaverapi) => {
 
       await axios
         .get(
-          `https://api.quavergame.com/v1/users/scores/recent?id=${props.id}&mode=${props.mode}`
+          `https://api.quavergame.com/v1/users/scores/recent?id=${id}&mode=${mode}`
         )
         .then(function (res) {
           setStats([
@@ -97,7 +97,7 @@ const QuaverStats = (props: quaverapi) => {
       ) : (
         <div
           className='quaver'
-          key={props.id}
+          key={id}
         >
           <div>
             {pfp ? (
@@ -110,7 +110,7 @@ const QuaverStats = (props: quaverapi) => {
               <>
                 <p className='quaver username'>{user}</p>
                 <div>
-                  <p className='quaver content'>ID:{props.id}</p>
+                  <p className='quaver content'>ID:{id}</p>
                   <p className='quaver content'>Country: {country}</p>
                   <p className='quaver content'>Updated at: {latest}</p>
                 </div>

@@ -56,6 +56,14 @@ code {
   width: fit-content;
 }
 
+.navtooltip {
+  display: none;
+}
+
+.activetooltip {
+  display: block;
+}
+
 a {
   text-decoration: none;
   list-style-type: none;
@@ -198,6 +206,21 @@ a {
   background-color: var(--color-navbar-hover);
 }
 
+.navbar .navbar-icon a{
+  display: block;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar .navbar-icon a:hover{
+  background-color: var(--color-navbar-hover)
+}
+
+.navbar a:active{
+
+}
+
 
 .dropdown-content {
   background-color: var(--color-navbar);
@@ -215,6 +238,12 @@ a {
   position: relative;
   top: 5px;
   display: block;
+}
+
+@-webkit-keyframes a-animation {
+  from {
+
+  }
 }
 
 @-webkit-keyframes speen /* Safari and Chrome */ {

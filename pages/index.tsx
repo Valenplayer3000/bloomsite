@@ -1,11 +1,13 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import PostsComponent from "../../components/posts";
+import Head from "next/head";
+import PostsComponent from "../components/posts";
+import Layout from "../components/layout";
 
 const Home = () => {
   return (
     <>
-      <Helmet>
+      <Layout>
+      <Head>
         <meta
           property='og:title'
           content='Home @ StationSite'
@@ -18,7 +20,7 @@ const Home = () => {
           property='og:description'
           content="StationaryStation's Portfolio"
         />
-      </Helmet>
+      </Head>
       <div className='content-container'>
         <div className='title-container'>
           <h1 className='title'>Home</h1>
@@ -104,6 +106,7 @@ const Home = () => {
           author='StationaryStation'
         />
       </div>
+      </Layout>
     </>
   );
 };

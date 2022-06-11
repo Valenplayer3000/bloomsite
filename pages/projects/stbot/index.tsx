@@ -1,11 +1,12 @@
 import React from 'react';
+import Layout from '../../../components/layout';
 
 const Stbot = () => {
   // This page will be deprecated in a future update to the site
   // Since I no longer maintain Stationbot anymore
 
   return (
-    <>
+    <Layout>
       <div className='title-container'>
         <h1 className='title'>StationBot</h1>
         <p className='subtitle'>
@@ -23,7 +24,7 @@ const Stbot = () => {
         I made it because I wanted to learn javascript and didn&apos;t knew what
         to do anyways
       </p>
-    </>
+    </Layout>
   );
 };
 
